@@ -118,27 +118,22 @@ require("lualine").setup {
         lualine_a = { "mode" },
         lualine_b = { "branch", "diff", "diagnostics" },
         lualine_c = {
-            { "filename", path = 1 }
+            { "filename", path = 1, shorten = true }
         },
-        lualine_x = { "encoding", "fileformat", "filetype" },
-        lualine_y = { {
-            function()
-                local msg = "None"
-                local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
-                local clients = vim.lsp.get_active_clients()
-                if next(clients) == nil then
-                    return msg
-                end
-                for _, client in ipairs(clients) do
-                    local filetypes = client.config.filetypes
-                    if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-                        return client.name
-                    end
-                end
-                return msg
-            end,
-            icon = " LSP:",
-        } },
+        lualine_x = {{
+            "lsp_progress",
+            separators = {
+                component = " ",
+                progress = " | ",
+                message = { pre = "(", post = ")" },
+                percentage = { pre = "", post = "%% " },
+                title = { pre = "", post = " " },
+                lsp_client_name = { pre = "[", post = "]" },
+                spinner = { pre = "", post = "" },
+            },
+            display_components = { "lsp_client_name", { "title", "percentage" } },
+        }},
+        lualine_y = { "encoding", "fileformat", "filetype" },
         lualine_z = { "progress", "location" }
     },
     inactive_sections = {

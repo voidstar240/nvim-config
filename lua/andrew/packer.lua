@@ -13,6 +13,8 @@ return require("packer").startup(function(use)
         requires = { "nvim-tree/nvim-web-devicons" }
     }
 
+    use 'WhoIsSethDaniel/lualine-lsp-progress.nvim'
+
     use "lukas-reineke/indent-blankline.nvim"
 
     use "folke/which-key.nvim"
