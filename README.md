@@ -1,6 +1,5 @@
 # My Neovim Config
 
 ## Setup
-- Install packer.nvim
-- Clone this repo into ~/.config/nvim
-- Run :PackerSync to update all packages
+- Clone this repo into `~/.config/nvim`
+- Lazy.nvim is bootstrapped; launch neovim and plugins will install

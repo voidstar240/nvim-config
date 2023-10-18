@@ -1,33 +1,33 @@
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- disable netrw (use nvim-tree instead)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.opt.nu = true                -- shows the current line number at the cursor
+vim.opt.relativenumber = true    -- shows relative line number above and below the cursor
 
-vim.opt.smartindent = true
+vim.opt.tabstop = 4              -- number of spaces per tab
+vim.opt.softtabstop = 4          -- number of spaces per tab during editing
+vim.opt.shiftwidth = 4           -- number of spaces to use for auto indent
+vim.opt.expandtab = true         -- insert spaces instead of tabs
 
-vim.opt.wrap = false
+vim.opt.autoindent = true        -- match indentation to preceding line
+vim.opt.smartindent = true       -- extra rules to govern above
 
-vim.opt.swapfile = false
-vim.opt.backup = false
+vim.opt.wrap = false             -- text wrapping
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+vim.opt.swapfile = false         -- do not write a swapfile for buffer
+vim.opt.backup = false           -- do not backup buffer
 
-vim.opt.termguicolors = true
+vim.opt.hlsearch = false         -- do not highlight search
+vim.opt.incsearch = true         -- search while typing the query
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
-vim.opt.isfname:append("@-@")
+vim.opt.termguicolors = true     -- enables 24-bit color
 
-vim.opt.updatetime = 50
+vim.opt.scrolloff = 8            -- number of lines between top/bottom of screen and cursor
+vim.opt.signcolumn = "yes"       -- column to left of line num for signs (breakpoint/error/warning)
+vim.opt.colorcolumn = "80"       -- draw column at 80 characters
 
-vim.opt.colorcolumn = "80"
+vim.opt.isfname:append("@-@")    -- allow @ in file names
 
-vim.opt.timeout = true
-vim.opt.timeoutlen = 300
-
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.opt.timeout = true           -- allow key presses to timeout
+vim.opt.timeoutlen = 1000        -- pressed keys timeout after 1000 ms
