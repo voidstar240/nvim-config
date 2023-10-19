@@ -15,9 +15,9 @@ return {
       filters = {
         git_ignored = true, -- hide files that are git ignored
         dotfiles = false,    -- hide dot files
-        git_clean = true,    -- hide the .git dir
+        git_clean = false,    -- hide the files with no git status
         no_buffer = false,   -- hide files that are not being edited
-        custom = {},
+        custom = { "^\\.git$" }, -- regex for files to hide
         exclude = {},
       },
       actions = {
