@@ -19,7 +19,7 @@ return {
         vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, {desc = "[V]iew [W]orkspace [S]ymbol", unpack(opts)})
         vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, {desc = "[V]iew [C]ode [A]ctions", unpack(opts)})
         vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, {desc = "[V]iew [R]eferences", unpack(opts)})
-        vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, {desc = "[R]e[N]ame symbol", unpack(opts)})
+        vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, {desc = "[V]ariable [R]e[N]ame", unpack(opts)})
         vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, {desc = "Signature help", unpack(opts)})
       end)
 
