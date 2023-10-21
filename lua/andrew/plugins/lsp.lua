@@ -15,7 +15,7 @@ return {
         vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, {desc = "View hover documentation", unpack(opts)})
         vim.keymap.set("n", "<leader>d", function() vim.diagnostic.goto_next() end, {desc = "Go to next [D]iagnostic", unpack(opts)})
         vim.keymap.set("n", "<leader>D", function() vim.diagnostic.goto_prev() end, {desc = "Go to previous [D]iagnostic", unpack(opts)})
-        vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, {desc = "[V]iew [D]iagnostic float", unpack(opts)})
+        vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, {desc = "[V]iew [D]iagnostic under cursor", unpack(opts)})
         vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, {desc = "[V]iew [W]orkspace [S]ymbol", unpack(opts)})
         vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, {desc = "[V]iew [C]ode [A]ctions", unpack(opts)})
         vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, {desc = "[V]iew [R]eferences", unpack(opts)})
