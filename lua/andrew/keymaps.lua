@@ -8,7 +8,6 @@ vim.keymap.set("n", "<Leader>vf", vim.cmd.NvimTreeOpen, { desc = "[V]iew [F]iles
 
 -- unbind macro commands
 vim.keymap.set("n", "Q", "<Nop>")
-vim.keymap.set("n", "q", "<Nop>")
 
 -- copy and paste from system clipboard
 vim.keymap.set({ "n", "v" }, "<Leader>y", "\"+y", { desc = "[Y]ank to system clipboard" })
