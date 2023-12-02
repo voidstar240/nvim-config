@@ -5,8 +5,30 @@ return {
     require("nvim-treesitter.install").update({ with_sync = true })()
   end,
   config = function()
-    require'nvim-treesitter.configs'.setup {
-      ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "rust" },
+    require("nvim-treesitter.configs").setup {
+      ensure_installed = {
+          "bash",
+          "c",
+          "cmake",
+          "cpp",
+          "css",
+          "glsl",
+          "hlsl",
+          "html",
+          "javascript",
+          "json",
+          "latex",
+          "lua",
+          "make",
+          "python",
+          "query",
+          "regex",
+          "rust",
+          "toml",
+          "wgsl",
+          "vim",
+          "vimdoc",
+      },
       sync_install = false,
       auto_install = false,
       ignore_install = {},
