@@ -1,18 +1,18 @@
-vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true });
+vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>");
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- open netrw (uncomment if using netrw)
--- vim.keymap.set("n", "<leader>vf", vim.cmd.Ex, { desc = "[V]iew [F]iles" });
-vim.keymap.set("n", "<leader>vf", vim.cmd.NvimTreeOpen, { desc = "[V]iew [F]iles" });
+-- vim.keymap.set("n", "<Leader>vf", vim.cmd.Ex, { desc = "[V]iew [F]iles" });
+vim.keymap.set("n", "<Leader>vf", vim.cmd.NvimTreeOpen, { desc = "[V]iew [F]iles" });
 
 -- unbind macro commands
 vim.keymap.set("n", "Q", "<Nop>")
 vim.keymap.set("n", "q", "<Nop>")
 
 -- copy and paste from system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", "\"+y", { desc = "[Y]ank to system clipboard" })
-vim.keymap.set({ "n", "v" }, "<leader>P", "\"+p", { desc = "[P]aste from system clipboard" })
+vim.keymap.set({ "n", "v" }, "<Leader>y", "\"+y", { desc = "[Y]ank to system clipboard" })
+vim.keymap.set({ "n", "v" }, "<Leader>P", "\"+p", { desc = "[P]aste from system clipboard" })
 
 -- center cursor when moving half page up/down and during searches
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move half page [D]own" })
