@@ -1,10 +1,10 @@
-vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>");
+vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>")
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- open netrw (uncomment if using netrw)
--- vim.keymap.set("n", "<Leader>vf", vim.cmd.Ex, { desc = "[V]iew [F]iles" });
-vim.keymap.set("n", "<Leader>vf", vim.cmd.NvimTreeOpen, { desc = "[V]iew [F]iles" });
+-- vim.keymap.set("n", "<Leader>vf", vim.cmd.Ex, { desc = "[V]iew [F]iles" })
+vim.keymap.set("n", "<Leader>vf", vim.cmd.NvimTreeOpen, { desc = "[V]iew [F]iles" })
 
 -- unbind macro commands
 vim.keymap.set("n", "Q", "<Nop>")
