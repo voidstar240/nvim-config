@@ -6,8 +6,8 @@ vim.opt.nu = true                -- shows the current line number at the cursor
 vim.opt.relativenumber = true    -- shows relative line number above and below the cursor
 
 vim.opt.tabstop = 4              -- number of spaces per tab
-vim.opt.softtabstop = 4          -- number of spaces per tab during editing
-vim.opt.shiftwidth = 4           -- number of spaces to use for auto indent
+vim.opt.softtabstop = 0          -- number of spaces per tab during editing
+vim.opt.shiftwidth = 0           -- number of spaces to use for auto indent
 vim.opt.expandtab = true         -- insert spaces instead of tabs
 
 vim.opt.autoindent = true        -- match indentation to preceding line
