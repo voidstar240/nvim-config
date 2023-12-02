@@ -29,6 +29,7 @@ return {
                 SignColumn = { bg = p.dark0 },
                 NormalFloat = { bg = p.dark0 },
                 NvimTreeGitDirty = { fg = p.neutral_red },
+                NvimTreeGitStaged = { fg = p.neutral_green },
                 NvimTreeIndentMarker = { fg = p.dark2 },
             }
         })
