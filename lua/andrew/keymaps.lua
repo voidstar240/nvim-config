@@ -8,6 +8,8 @@ vim.keymap.set("n", "<Leader>vf", vim.cmd.NvimTreeOpen, { desc = "[V]iew [F]iles
 
 -- unbind macro commands
 vim.keymap.set("n", "Q", "<Nop>")
+vim.keymap.set({ "n", "v" }, "<C-m>", "q", { desc = "Start/Stop recording [M]acro" })
+vim.keymap.set({ "n", "v" }, "q", "<Nop>")
 
 -- copy and paste from system clipboard
 vim.keymap.set({ "n", "v" }, "<Leader>y", "\"+y", { desc = "[Y]ank to system clipboard" })
