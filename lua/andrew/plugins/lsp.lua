@@ -12,7 +12,7 @@ return {
                 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, { desc = "[G]o to [D]efinition", unpack(opts) })
                 vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, { desc = "[G]o to [D]eclaration", unpack(opts) })
                 vim.keymap.set("n", "gt", function() vim.lsp.buf.type_definition() end, { desc = "[G]o to [T]ype definition", unpack(opts) })
-                vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, {desc = "View hover documentation", unpack(opts) })
+                vim.keymap.set("n", "<Leader><Leader>", function() vim.lsp.buf.hover() end, {desc = "View hover documentation", unpack(opts) })
                 vim.keymap.set("n", "<Leader>d", function() vim.diagnostic.goto_next() end, { desc = "Go to next [D]iagnostic", unpack(opts) })
                 vim.keymap.set("n", "<Leader>D", function() vim.diagnostic.goto_prev() end, { desc = "Go to previous [D]iagnostic", unpack(opts) })
                 vim.keymap.set("n", "<Leader>vd", function() vim.diagnostic.open_float() end, { desc = "[V]iew [D]iagnostic under cursor", unpack(opts) })
@@ -20,7 +20,7 @@ return {
                 vim.keymap.set("n", "<Leader>vca", function() vim.lsp.buf.code_action() end, { desc = "[V]iew [C]ode [A]ctions", unpack(opts) })
                 vim.keymap.set("n", "<Leader>vrr", function() vim.lsp.buf.references() end, { desc = "[V]iew [R]eferences", unpack(opts) })
                 vim.keymap.set("n", "<Leader>vrn", function() vim.lsp.buf.rename() end, { desc = "[R]e[N]ame Symbol", unpack(opts) })
-                vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, { desc = "Signature help", unpack(opts) })
+                vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, { desc = "Signature [H]elp", unpack(opts) })
             end)
 
             require("mason").setup({})
