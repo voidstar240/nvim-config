@@ -25,9 +25,11 @@ vim.opt.termguicolors = true     -- enables 24-bit color
 
 vim.opt.scrolloff = 8            -- number of lines between top/bottom of screen and cursor
 vim.opt.signcolumn = "yes"       -- column to left of line num for signs (breakpoint/error/warning)
-vim.opt.colorcolumn = "80"       -- draw column at 80 characters
+vim.opt.colorcolumn = "81"       -- draw column at 80 characters
 
 vim.opt.isfname:append("@-@")    -- allow @ in file names
 
 vim.opt.timeout = true           -- allow key presses to timeout
 vim.opt.timeoutlen = 1000        -- pressed keys timeout after 1000 ms
+
+vim.opt.cmdheight = 0            -- hide the command line

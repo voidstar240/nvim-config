@@ -31,9 +31,18 @@ return {
                 NvimTreeGitDirty = { fg = p.neutral_red },
                 NvimTreeGitStaged = { fg = p.neutral_green },
                 NvimTreeIndentMarker = { fg = p.dark2 },
+                MsgArea = { bg = p.dark0 },
             }
         })
         vim.opt.background = "dark"
         vim.cmd("colorscheme gruvbox")
+
+        -- Transparency
+        vim.cmd("highlight Normal guibg=none")
+        vim.cmd("highlight NonText guibg=none")
+        vim.cmd("highlight SignColumn guibg=none")
+        vim.cmd("highlight ColorColumn guifg=#504945")
+        vim.cmd("highlight NormalFloat guibg=none")
+        vim.cmd("highlight FloatBorder guibg=none")
     end
 }
