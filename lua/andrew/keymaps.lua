@@ -25,8 +25,8 @@ vim.keymap.set("n", "J", "<C-D>zz", { desc = "Move half page down" })
 vim.keymap.set("n", "K", "<C-U>zz", { desc = "Move half page up" })
 
 -- move cursor to start and end of line
-vim.keymap.set("n", "H", "^", { desc = "Move cursor to start of line" })
-vim.keymap.set("n", "L", "$", { desc = "Move cursor to end of line" })
+vim.keymap.set({ "n", "v" }, "H", "^", { desc = "Move cursor to start of line" })
+vim.keymap.set({ "n", "v" }, "L", "$", { desc = "Move cursor to end of line" })
 
 -- move selection up/down and smart indent it
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection up" })
