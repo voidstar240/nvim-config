@@ -20,9 +20,9 @@ vim.keymap.set({ "n", "v" }, "<Leader>P", "\"+p", { desc = "[P]aste from system 
 vim.keymap.set("n", "n", "nzzzv", { desc = "Go to next search result" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Go to prev search result" })
 
--- move half page up/down and center cursor
-vim.keymap.set("n", "J", "<C-D>zz", { desc = "Move half page down" })
-vim.keymap.set("n", "K", "<C-U>zz", { desc = "Move half page up" })
+-- move half page up/down
+vim.keymap.set("n", "J", "<C-D>", { desc = "Move half page down" })
+vim.keymap.set("n", "K", "<C-U>", { desc = "Move half page up" })
 
 -- move cursor to start and end of line
 vim.keymap.set({ "n", "v" }, "H", "^", { desc = "Move cursor to start of line" })
