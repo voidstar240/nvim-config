@@ -21,8 +21,8 @@ vim.keymap.set("n", "n", "nzzzv", { desc = "Go to next search result" })
 vim.keymap.set("n", "N", "Nzzzv", { desc = "Go to prev search result" })
 
 -- move half page up/down
-vim.keymap.set("n", "J", "25j", { desc = "Move cursor half page down" })
-vim.keymap.set("n", "K", "25k", { desc = "Move cursor half page up" })
+vim.keymap.set("n", "J", "10j", { desc = "Move cursor half page down" })
+vim.keymap.set("n", "K", "10k", { desc = "Move cursor half page up" })
 
 -- move cursor to start and end of line
 vim.keymap.set({ "n", "v" }, "H", "^", { desc = "Move cursor to start of line" })
